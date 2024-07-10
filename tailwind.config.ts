@@ -13,8 +13,20 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        move: {
+          '0%': { transform: 'translate(0)' },
+          '30%': {transform: 'translate(30dvh, 10dvh)'},
+          '50%': { transform: 'translate(50dvh, 20dvh)' },
+          '100%': { transform: 'translate(107dvh, 25dvh)' },
+        }
+      },
+      animation: {
+        move: 'move 2s ease-in-out forwards'
+      }
     },
   },
-  plugins: [],
+
+  plugins: [], 
 };
 export default config;
